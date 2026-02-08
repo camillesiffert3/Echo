@@ -1,0 +1,20 @@
+{
+  "name": "Echo",
+  "short_name": "Echo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#4C00FF",
+  "theme_color": "#4C00FF",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/vB4pNzZk/IMG-6843.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.postimg.cc/vB4pNzZk/IMG-6843.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
