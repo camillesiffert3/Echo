@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Echo</title>
+
+  <!-- Lien vers le manifest pour PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Meta iOS pour iPhone / iPad -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="https://i.postimg.cc/vB4pNzZk/IMG-6843.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <!-- Splash screen -->
+  <div id="splash">
+    <img src="https://i.postimg.cc/vB4pNzZk/IMG-6843.png" alt="Echo Logo" class="splash-logo">
+    <h1>Echo</h1>
+    <p>Chaque message que tu n’envoies pas te rend plus fort...</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Echo</h1>
+    <button id="lang-btn">FR/EN</button>
+    <div id="counter">0 phrases lues</div>
+    <div id="streak">Streak: 0 jours</div>
+  </header>
+
+  <!-- Feed hypnotique -->
+  <section id="feed-container">
+    <div id="feed"></div>
+    <button id="next-btn">Suivant</button>
+  </section>
+
+  <!-- Journal humeur -->
+  <section id="journal">
+    <h2>Ton humeur aujourd'hui :</h2>
+    <select id="mood">
+      <option value="">Choisis ton humeur</option>
+      <option value="😊">😊 Heureux</option>
+      <option value="😔">😔 Triste</option>
+      <option value="😡">😡 En colère</option>
+      <option value="😌">😌 Calme</option>
+    </select>
+    <button id="save-mood">Enregistrer</button>
+    <div id="mood-display"></div>
+    <textarea id="personal-note" placeholder="Tes pensées / messages..."></textarea>
+  </section>
+
+  <!-- Calendrier No-Contact -->
+  <section id="calendar">
+    <h2>Calendrier No-Contact :</h2>
+    <div id="calendar-grid"></div>
+  </section>
+
+  <!-- Stats & badges -->
+  <section id="stats">
+    <h2>Statistiques :</h2>
+    <div id="stats-display"></div>
+    <div id="badges-display"></div>
+  </section>
+
+  <!-- Footer / partage -->
+  <footer class="footer">
+    <button id="share-btn">Partager ton streak</button>
+  </footer>
+</div>
+
+<!-- Confetti canvas -->
+<canvas id="confetti-canvas"></canvas>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
