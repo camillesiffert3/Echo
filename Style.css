@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #4C00FF, #9D00FF);
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(0,0,0,0.3);
+}
+
+#feed-container {
+  margin: 1rem;
+  text-align: center;
+}
+
+#feed {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #4C00FF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+#journal textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  padding: 0.5rem;
+}
+
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-top: 1rem;
+}
+
+.calendar-day {
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.splash-logo {
+  width: 120px;
+  display: block;
+  margin: 2rem auto 1rem;
+}
+
+#splash {
+  position: fixed;
+  top:0; left:0; width:100%; height:100%;
+  background: linear-gradient(135deg, #4C00FF, #9D00FF);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  z-index: 1000;
+  text-align:center;
+  color:white;
+}
+
+#badges-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.badge {
+  background: gold;
+  color: #4C00FF;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
